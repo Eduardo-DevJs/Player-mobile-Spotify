@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-color: #222;
+}
+
+.container{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.player{
+  width: 350px;
+  padding: 20px;
+  background: linear-gradient(#907276,#524043) ;
+  border-radius: 10px;
+  color: #f2f2f2;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.info-music h5{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.info-music p{
+  text-align: center;
+  font-size: 15px;
+}
+
+.img img{
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section i {
+  font-size: 25px;
+}
+
+section i:hover {
+  color: #c23b3b;
+  cursor: pointer;
+}
+
+.linha{
+  position: relative;
+}
+
+.linha::before{
+  content: '';
+  position: absolute;
+  top: -1px ;
+  width: 40px;
+  border: 2px solid red;
+}
+
+hr{
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+hr::before{
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 40px;
+  border-radius: 50px;
+  height: 15px;
+  width: 15px;
+  background-color: red;
+}
+
+.minutes {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.play{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fa-solid.fa-shuffle{
+  color: #3FB56B;
+}
+
+.play i:nth-child(1){
+  font-size: 25px;
+}
+
+.fa-sharp .fa-solid, .fa-arrow-rotate-left{
+  font-size: 25px;
+}
+
+.acoes{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.acoes i:nth-child(2){
+  font-size: 3em;
+  cursor: pointer;
+}
+
+.acoes i:nth-child(1), .acoes i:nth-child(3){
+  font-size: 2em;
+  cursor: pointer;
+}
+
+#next{
+  transform: rotateY(180deg);
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.icons{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
